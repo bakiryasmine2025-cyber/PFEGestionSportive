@@ -60,4 +60,8 @@ public class User {
     private String nationalite;
 
     private String adresse;
+
+    @Column(nullable = false)
+    @Builder.Default
+    private Boolean actif=true;
 }
